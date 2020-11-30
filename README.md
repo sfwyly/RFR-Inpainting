@@ -18,7 +18,7 @@ Reproducting "Recurrent Feature Reasoning For Image Inpainting" of CVPR 2020 by 
 **run.py** : Run the network  
 **test.py** : Test the network  
 
-## using
+## Using
 
 > python run.py /root/image_root_path/ /root/mask_root_path    
 All parameters are set in config.py.
