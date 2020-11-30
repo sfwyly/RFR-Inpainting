@@ -22,12 +22,6 @@ def total_variation_loss(image, mask_list):
     x_deltas, y_deltas = high_pass_x_y(image)
     return tf.reduce_mean(tf.abs(x_deltas)) + tf.reduce_mean(tf.abs(y_deltas))
 
-
-def border_loss(image, mask_list):
-    x_var = (image[:, :, 1:, :] - image[:, :, :-1, :]) * (mask_list[:, :, 1:, :] - mask_list[:, :, :-1, :])
-    y_var = (image[:, 1:, :, :] - image[:, :-1, :, :]) * (mask_list[:, 1:, :, :] - mask_list[:, :-1, :, :])
-    return tf.reduce_mean(tf.abs(x_var)) + tf.reduce_mean(tf.abs(y_var))
-
 def vgg_layers(layer_names):
     vgg = tf.keras.applications.VGG16(include_top=False, weights='imagenet')
     vgg.trainable = False
