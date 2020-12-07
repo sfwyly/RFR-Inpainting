@@ -214,7 +214,7 @@ class RFRNet(models.Model):
         self.tail1 = PartialConv(in_channels=67, out_channels=32, kernel_size=3, strides=1, padding="same",
                                  multi_channel=True, use_bias=False)
         self.tail2 = Bottleneck(output_dim=32, strides=1)
-        self.out = layers.Conv2D(3, kernel_size=3, activation="sigmoid", strides=1, padding="same")
+        self.out = layers.Conv2D(3, kernel_size=3, activation="sigmoid", strides=1, padding="same",use_bias = False)
 
     def call(self, input, mask):
         # 一次下采样后进行循环推理
