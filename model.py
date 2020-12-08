@@ -236,7 +236,7 @@ class RFRNet(models.Model):
             x2, m2 = self.Pconv21(x2, m2)
             x2, m2 = self.Pconv22(x2, m2)
             x2 = tf.nn.leaky_relu(self.bn2(x2))
-            s2 = self.RFRModule(x2, m2[..., 0:1])  # 这里的x2 m2都是128*128大小 在RFR模块里dec_3执行后h是32*32大小 需要对mask进行一个resize
+            x2 = self.RFRModule(x2, m2[..., 0:1])  # 这里的x2 m2都是128*128大小 在RFR模块里dec_3执行后h是32*32大小 需要对mask进行一个resize
 
             x2 = x2 * m2
             feature_group.append(x2[..., tf.newaxis])
