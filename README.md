@@ -25,11 +25,11 @@ All parameters are set in config.py.
 
 ## Pretrained Models
 
-**CeleA** : TODO  
+**CeleA** : At Once
 **Place2** : TODO  
 **Paris Street View** ：TODO  
 
 ## Details  
 
-Unlike the [original version](https://github.com/jingyuanli001/RFR-Inpainting), I normalize all inputs to between 0 and 1, and use the sigmoid function for the output. Because I find the author's original code hard to converge, what am I missing?
+Unlike the [original version](https://github.com/jingyuanli001/RFR-Inpainting), I normalize all inputs to between 0 and 1, and use the sigmoid function for the output. Because I find the author's original code hard to converge.
 
