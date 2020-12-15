@@ -1,5 +1,5 @@
 # RFR-Inpainting
-Reproducting "Recurrent Feature Reasoning For Image Inpainting" of CVPR 2020 by tensorflow  
+Reproducing "Recurrent Feature Reasoning For Image Inpainting" of CVPR 2020 by tensorflow  
 
 About half a day of training in NVIDIA V100 (32G)：
 |  Inputs   | Outputs  |
