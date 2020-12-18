@@ -25,8 +25,12 @@ About half a day of training in NVIDIA V100 (32G)：
 **test.py** : Test the network  
 
 ## Using
+train  
+> python run.py /root/image_root_path/ /root/mask_root_path  
 
-> python run.py /root/image_root_path/ /root/mask_root_path    
+test  
+> python test.py /root/image_root_path/ /root/mask_root_path  
+
 All parameters are set in config.py.
 
 ## Pretrained Models
