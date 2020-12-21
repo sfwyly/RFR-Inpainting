@@ -27,3 +27,6 @@ iteration = 20
 
 #save frequency
 save_bacth = 10
+
+#model path
+model_path = "/model/RFR_CeleA.h5"
