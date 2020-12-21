@@ -19,7 +19,7 @@ def test(image_path,mask_path):
     generator = getNetwork()
     all_image_paths = getAllImagePath(image_path)
     mask_paths = getAllImagePath(mask_path)
-
+    generator.load_weights(model_path)
     if(len(all_image_paths)!= len(mask_paths)):
         print("The number of images and masks is unequal !")
         return
