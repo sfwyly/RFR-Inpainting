@@ -35,8 +35,8 @@ All parameters are set in config.py.
 
 ## Pretrained Models
 
-**CeleA** : At Once  
-**Place2** : TODO  
+**CelebA** : At Once  
+**Places2** : TODO  
 **Paris Street View** ：TODO  
 
 ## Details  
